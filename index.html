@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="container mx-auto max-w-[400px] mt-[30px]">
+        <div class="flex flex-col justify-center items-center space-y-[20px]">
+            <span>Number 1</span>
+            <input class="outline-none border px-[10px] bg-gray-500 w-[200px] h-[50px] text-white" type="text" id="number1">
+            <span>Number 2</span>
+            <input class="outline-none border px-[10px] bg-gray-500 w-[200px] h-[50px] text-white" type="text" id="number2">
+
+            <select id="operation" class="w-[200px] h-[50px]">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+
+            <button onclick="calculator()">Result</button>
+            <input id="result" class="outline-none border px-[10px] bg-gray-500 w-[200px] h-[50px] text-white" type="text" disabled>
+        </div>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
